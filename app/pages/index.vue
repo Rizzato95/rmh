@@ -8,15 +8,19 @@ useSeoMeta({ title: 'RMH Run Club — Push your horses', description: 'Restera M
     <section class="hero">
       <img class="hero-photo" src="/images/running.webp" alt="I Restera Mad Horses in corsa con la bandiera del club" fetchpriority="high" width="1200" height="1600">
       <div class="hero-shade"></div>
-      <div class="hero-content"><p class="eyebrow hero-eyebrow"><span class="little-cross">✳</span> Restera Mad Horses · Treviso</p><h1>Push your<br><em>horses.</em><span class="hero-star" aria-hidden="true">↗</span></h1><div class="hero-bottom"><p>Un passo fuori. Un gruppo di amici.<br>La Restera è il nostro punto di partenza.</p><a class="button button-red" href="#next-event">Il prossimo evento <span aria-hidden="true">↗</span></a></div></div>
+      <div class="hero-content"><p class="eyebrow hero-eyebrow"><span class="little-cross">✳</span> Restera Mad Horses · Treviso</p><h1>Push your<br><em>horses.</em><span class="hero-star" aria-hidden="true">↗</span></h1><div class="hero-bottom"><p>Si corre meglio in compagnia.<br>Ci vediamo in Restera.</p><a class="button button-red" href="#next-event">Il prossimo evento <span aria-hidden="true">↗</span></a></div></div>
       <div class="hero-side" aria-hidden="true">RUN TOGETHER. STAY TOGETHER.</div>
-      <div class="hero-caption"><span>45°40′ N &nbsp; 12°15′ E</span><a href="#club">Scopri RMH ↓</a></div>
+      <div class="hero-caption"><span title="Restera sull’Alzaia del Sile · Via Alzaia 7, Treviso">45.66381° N &nbsp; 12.25906° E</span><a href="#club">Scopri RMH ↓</a></div>
     </section>
     <div class="ticker" aria-hidden="true"><div><span>Social run</span><b>✳</b><span>Good people</span><b>✳</b><span>Push your horses</span><b>✳</b><span>Treviso</span><b>✳</b><span>Social run</span><b>✳</b><span>Good people</span><b>✳</b><span>Push your horses</span><b>✳</b><span>Treviso</span><b>✳</b></div></div>
     <section id="club" class="club-section section-pad">
       <div class="section-index"><span class="eyebrow">01 / Il club</span><span>Un posto anche per te.</span></div>
       <div class="club-grid"><h2>Il bello è<br>farlo <em>insieme.</em></h2><div class="club-copy"><p class="lead">Siamo i Restera Mad Horses.<br>Corriamo a Treviso, lungo la Restera.<br>E ci piace tutto quello che viene dopo.</p><p>Ci troviamo circa ogni due settimane per una social run: un’occasione per muoversi, conoscere persone e vivere la città. Puoi venire anche se sei alla tua prima corsa. Per le uscite abituali non servono prenotazioni: scopri il prossimo ritrovo su Instagram e raggiungici.</p><a class="text-link" href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer">Seguici su Instagram ↗</a></div></div>
-      <div class="club-values"><div><span>01</span><h3>Adatto a tutti.</h3><p>La voglia di esserci conta più del cronometro.</p></div><div><span>02</span><h3>Di casa in Restera.</h3><p>Il nostro punto d’incontro, a due passi da Treviso.</p></div><div><span>03</span><h3>Oltre la corsa.</h3><p>Due chiacchiere, un brindisi, una nuova amicizia.</p></div></div>
+      <div class="club-values">
+        <article class="value-card"><span class="value-number" aria-hidden="true">01</span><div><h3>Adatto a tutti.</h3><p>La voglia di esserci conta più del cronometro.</p></div></article>
+        <article class="value-card value-card-dark"><span class="value-number" aria-hidden="true">02</span><div><h3>Di casa in Restera.</h3><p>Il nostro punto d’incontro, a due passi da Treviso.</p></div></article>
+        <article class="value-card value-card-red"><span class="value-number" aria-hidden="true">03</span><div><h3>Oltre la corsa.</h3><p>Due chiacchiere, un brindisi, una nuova amicizia.</p></div></article>
+      </div>
     </section>
     <section id="next-event" class="next-section section-pad">
       <div class="section-index"><span class="eyebrow">02 / Next event</span><NuxtLink to="/eventi" class="text-link">Tutti gli eventi ↗</NuxtLink></div>
