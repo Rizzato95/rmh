@@ -2,7 +2,11 @@ import type { ObjectDirective } from 'vue'
 
 export default defineNuxtPlugin((nuxtApp) => {
   if (import.meta.server) {
-    nuxtApp.vueApp.directive('reveal', { getSSRProps: () => ({}) })
+    nuxtApp.vueApp.directive('reveal', {
+      // Match the client-side initial state so SSR content never flashes before
+      // hydration starts its reveal animation.
+      getSSRProps: () => ({ class: 'reveal-pending' }),
+    })
     return
   }
 
