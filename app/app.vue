@@ -78,6 +78,7 @@ onBeforeUnmount(() => {
     <footer class="footer" :inert="menuOpen">
       <div class="footer-top" v-reveal><div><p class="eyebrow">Treviso. Restera. Insieme.</p><p class="footer-motto">Ci vediamo<br>alla prossima <em>run.</em></p></div><a class="round-link" href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer" aria-label="Segui RMH Run Club su Instagram"><AppIcon name="arrow-up-right" /></a></div>
       <div class="footer-bottom" v-reveal><img src="/images/logo-white.png" alt="RMH Run Club" width="110" height="54"><span>Restera Mad Horses · Treviso</span><a href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer">Instagram <AppIcon name="arrow-up-right" /></a><a href="https://chat.whatsapp.com/IDH3LhGGmqc4LsCLBkP7YN?mode=gi_t" target="_blank" rel="noopener noreferrer">Gruppo WhatsApp <AppIcon name="arrow-up-right" /></a></div>
+      <p class="footer-credit" v-reveal>Made with love by <a href="https://www.marcorizzato.it" target="_blank" rel="noopener noreferrer">Marco Rizzato</a></p>
     </footer>
   </div>
 </template>
