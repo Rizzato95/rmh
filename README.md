@@ -25,6 +25,10 @@ npm run build
 
 Output: `.output/public`. `netlify.toml` configura già comando e directory per Netlify. Collegare il repository a Netlify per ricompilare ad ogni aggiornamento dei contenuti. Il pacchetto statico separato può anche essere caricato su Netlify tramite deploy manuale.
 
+### Configurazione SEO
+
+Prima del deploy impostare `NUXT_PUBLIC_SITE_URL` nell'ambiente di hosting con il dominio pubblico canonico, senza slash finale (vedi `.env.example`). La variabile alimenta canonical URL, `sitemap.xml`, `robots.txt`, immagini delle preview social e dati strutturati. Dopo il deploy, inviare `https://tuo-dominio/sitemap.xml` a Google Search Console.
+
 ## Contenuti
 
 - `app/data/events.ts`: eventi, organizzatori, programma, gruppi opzionali, costo, iscrizione e galleria per singolo evento. Gli slug devono essere univoci; gli orari includono il fuso locale esplicitamente.

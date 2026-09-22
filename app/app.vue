@@ -1,4 +1,20 @@
 <script setup lang="ts">
+useSeoMeta({
+  ogSiteName: 'RMH Run Club',
+  ogLocale: 'it_IT',
+})
+useSchemaOrg([
+  defineOrganization({
+    name: 'RMH Run Club',
+    alternateName: 'Restera Mad Horses',
+    description: 'Run club aperto a tutti a Treviso, lungo la Restera.',
+    url: '/',
+    logo: '/images/logo-white.png',
+    areaServed: { '@type': 'City', name: 'Treviso' },
+    sameAs: ['https://www.instagram.com/rmh_runclub/'],
+  }),
+])
+
 const menuOpen = ref(false)
 const menuToggle = ref<HTMLButtonElement>()
 const menuPanel = ref<HTMLElement>()
