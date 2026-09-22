@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   vite: { plugins: [tailwindcss()] },
   site: {
     // Set NUXT_PUBLIC_SITE_URL in the hosting environment to the canonical origin.
-    url: process.env.NUXT_PUBLIC_SITE_URL || process.env.URL || 'http://localhost:3000',
+    url: process.env.NUXT_PUBLIC_SITE_URL || process.env.URL,
     name: 'RMH Run Club',
     defaultLocale: 'it',
     trailingSlash: false,
