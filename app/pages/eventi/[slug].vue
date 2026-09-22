@@ -9,7 +9,7 @@ const mapsUrl = event.address ? `https://www.google.com/maps/search/?api=1&query
 const eventDescription = `${event.title}: ${event.subtitle}. ${eventDate(event.startsAt, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })} a ${event.venue}${event.city ? `, ${event.city}` : ''}. ${event.price === 0 ? 'Partecipazione gratuita.' : ''}`
 
 usePageSeo({
-  title: `${event.title} – ${eventDate(event.startsAt)} | RMH Run Club`,
+  title: `${event.title} – ${eventDate(event.startsAt)}`,
   description: eventDescription,
   image: event.cover,
   imageAlt: `Locandina ${event.title}, RMH Run Club`,

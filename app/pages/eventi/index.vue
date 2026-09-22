@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { upcoming, past } = useEvents()
 usePageSeo({
-  title: 'Eventi e social run a Treviso | RMH Run Club',
+  title: 'Eventi e social run a Treviso',
   description: 'Scopri i prossimi social run e gli eventi dei Restera Mad Horses a Treviso, oppure rivivi gli appuntamenti passati.',
   image: '/images/coffee-september.webp',
   imageAlt: 'Coffee Beats, un evento di RMH Run Club a Treviso',

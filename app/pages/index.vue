@@ -2,7 +2,7 @@
 import { communityPhotos, eventDate } from '~/data/events'
 const { next } = useEvents()
 usePageSeo({
-  title: 'Run club a Treviso | RMH Run Club',
+  title: 'Run club a Treviso',
   description: 'RMH Run Club è la community di Treviso per social run aperte a tutti, lungo la Restera. Corri, incontra persone e scopri il prossimo evento.',
   image: '/images/og-home.jpg',
   imageAlt: 'RMH Run Club — Push your horses',
