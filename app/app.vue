@@ -92,9 +92,33 @@ onBeforeUnmount(() => {
     </header>
     <main id="main" :inert="menuOpen"><NuxtPage /></main>
     <footer class="footer" :inert="menuOpen">
-      <div class="footer-top" v-reveal><div><p class="eyebrow">Treviso. Restera. Insieme.</p><p class="footer-motto">Ci vediamo<br>alla prossima <em>run.</em></p></div><a class="round-link" href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer" aria-label="Segui RMH Run Club su Instagram"><AppIcon name="arrow-up-right" /></a></div>
-      <div class="footer-bottom" v-reveal><img src="/images/logo-white.png" alt="RMH Run Club" width="110" height="54"><span>Restera Mad Horses · Treviso</span><a href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer">Instagram <AppIcon name="arrow-up-right" /></a><a href="https://chat.whatsapp.com/IDH3LhGGmqc4LsCLBkP7YN?mode=gi_t" target="_blank" rel="noopener noreferrer">Gruppo WhatsApp <AppIcon name="arrow-up-right" /></a></div>
-      <p class="footer-credit" v-reveal>Made with love by <a href="https://www.marcorizzato.it" target="_blank" rel="noopener noreferrer">Marco Rizzato</a></p>
+      <div class="footer-top" v-reveal>
+        <div>
+          <p class="eyebrow">Treviso. Restera. Insieme.</p>
+          <p class="footer-motto">Ci vediamo<br>alla prossima <em>run.</em></p>
+        </div>
+        <a class="round-link" href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer" aria-label="Segui RMH Run Club su Instagram"><AppIcon name="arrow-up-right" /></a>
+      </div>
+      <div class="footer-content" v-reveal>
+        <div class="footer-brand">
+          <NuxtLink to="/" aria-label="RMH Run Club, home"><img src="/images/logo-white.png" alt="RMH Run Club" width="110" height="54"></NuxtLink>
+          <p>Restera Mad Horses<br>Treviso, Italia</p>
+        </div>
+        <nav class="footer-links" aria-label="Link RMH Run Club">
+          <p class="footer-label">Resta in corsa</p>
+          <a href="https://www.instagram.com/rmh_runclub/" target="_blank" rel="noopener noreferrer">Instagram <AppIcon name="arrow-up-right" /></a>
+          <a href="https://chat.whatsapp.com/IDH3LhGGmqc4LsCLBkP7YN?mode=gi_t" target="_blank" rel="noopener noreferrer">Gruppo WhatsApp <AppIcon name="arrow-up-right" /></a>
+        </nav>
+        <nav class="footer-links footer-legal" aria-label="Informazioni legali">
+          <p class="footer-label">Informazioni</p>
+          <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+          <NuxtLink to="/cookie-policy">Cookie Policy</NuxtLink>
+        </nav>
+      </div>
+      <div class="footer-meta" v-reveal>
+        <span>© 2026 RMH Run Club</span>
+        <p>Made with love by <a href="https://www.marcorizzato.it" target="_blank" rel="noopener noreferrer">Marco Rizzato</a></p>
+      </div>
     </footer>
   </div>
 </template>
