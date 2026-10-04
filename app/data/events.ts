@@ -1,12 +1,17 @@
 export interface ClubEvent {
   slug: string; title: string; subtitle: string; startsAt: string; endsAt: string;
-  cover: string; venue: string; city?: string; address?: string; organizers: string[];
-  description: string; registrationUrl?: string; price?: number;
+  cover: string; venue: string; city?: string; address?: string; mapUrl?: string; organizers: string[];
+  description: string; registrationUrl?: string; price?: number; priceNote?: string;
   program: { time?: string; title: string; detail: string }[];
   groups?: { distance: string; label: string; pace?: string }[];
   gallery: { src: string; alt: string }[];
 }
 export const events: ClubEvent[] = [
+  { slug: 'tiramisu-shake-out-run-ottobre-2026', title: 'Tiramisù Shake Out Run', subtitle: '5K easy run, tiramisù & soft clubbing', startsAt: '2026-10-10T09:30:00+02:00', endsAt: '2026-10-10T23:59:59+02:00', cover: '/images/tiramisu-shake-out.webp', venue: 'Vibes Bar', city: 'Treviso', address: 'Porta San Tomaso, Treviso', mapUrl: 'https://maps.app.goo.gl/ej6pi8WTX49LZXpPA', organizers: ['RMH Run Club', 'Disco Break', 'Vibes Bar', 'Home'], price: 5, priceNote: 'Tiramisù e caffè inclusi. Pagamento direttamente al Vibes.',
+    registrationUrl: 'https://forms.gle/Hy2E1oh49M8Z1mRKA',
+    description: '150 posti per partire con il piede giusto prima della corsa. Ci ritroviamo al Vibes tra tiramisù, caffè e musica, poi usciamo per una 5K easy nel centro di Treviso. Durante il giro facciamo tappa per il ritiro pettorali; al rientro, aperitivo insieme. Deposito borse custodito disponibile.',
+    program: [{ time: '09:30', title: 'Ritrovo al Vibes', detail: 'Check-in e deposito borse custodito.' }, { time: '09:30 10:30', title: 'Colazione & soft clubbing', detail: 'Un’ora di musica, tiramisù e caffè prima della corsa.' }, { time: '10:30', title: 'Shake Out Run', detail: '5K easy run nel centro di Treviso.' }, { title: 'Ritiro pettorali', detail: 'Durante la corsa facciamo tappa nell’area ufficiale e ci dividiamo in due gruppi: chi deve ritirare il pettorale avrà il tempo per farlo, mentre gli altri proseguiranno. Poi si riparte insieme verso il Vibes.' }, { time: '11:30', title: 'Post-run', detail: 'Aperitivo al Vibes con un’offerta speciale: breakfast con tiramisù e drink a 5 €, oppure paninetto e cicchetto a 5 € (opzionale). Pagamento direttamente al Vibes.' }],
+    groups: [{ distance: '5 km', label: 'Easy shake out run' }], gallery: [] },
   { slug: 'coffee-beats-settembre-2026', title: 'Coffee Beats', subtitle: 'Social run, breakfast & club', startsAt: '2026-09-26T09:45:00+02:00', endsAt: '2026-09-26T23:59:59+02:00', cover: '/images/coffee-september.webp', venue: 'Filò', city: 'Treviso', address: 'Viale Cadorna 8, Treviso', organizers: ['RMH Run Club', 'Disco Break', 'Alpro', 'Filò'], price: 0,
     registrationUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSck70ZV0s6-aGu1Yb-RywQS7QphJqlVjvbz41K8W1cTdrKDNQ/viewform',
     description: 'Ci vediamo da Filò per iniziare il sabato insieme. Prima una social run, ognuno al proprio passo. Poi ci ritroviamo per colazione, musica e soft clubbing con il DJ. Non importa quanti chilometri hai nelle gambe: porta la tua voglia di esserci.',
